@@ -1,0 +1,143 @@
+﻿@model List<Services>
+@{
+    ViewData["Title"] = "Services";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Services - Eterna Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link src="~/assets/img/favicon.png" rel="icon">
+    <link src="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link src="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link src="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link src="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link src="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link src="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link src="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link src="~/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Eterna - v4.7.0
+    * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Services</li>
+                </ol>
+                <h2>Services</h2>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="row">
+                    @foreach (var services in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="icon-box">
+                                <div class="icon"><i class="@services.Icon"></i></div>
+                                <h4><a href="">@services.Title</a></h4>
+                                <p>@services.Text</p>
+                            </div>
+                        </div>
+                    }
+
+                   
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
+        <!-- ======= Our Skills Section ======= -->
+        <section id="skills" class="skills">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Our Skills</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="~/assets/img/skills-img.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt direna past reda
+                        </p>
+
+                        <div class="skills-content">
+
+                            <div class="progress">
+                                <span class="skill">HTML <i class="val">100%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <span class="skill">CSS <i class="val">90%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <span class="skill">JavaScript <i class="val">75%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <span class="skill">Photoshop <i class="val">55%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Our Skills Section -->
+
+    </main><!-- End #main -->
+   
+
+</body>
+
+</html>
+
